@@ -4,17 +4,17 @@ Hello People!  Updated Readme!!!!!!!!
 
 ###Wire Frames
 
-![](emilyBollmanPortfolioSite/Home-Page-Wire-Frame.png)
-![](emilyBollmanPortfolioSite/Resume-Wireframe.png)
-![](emilyBollmanPortfolioSite/blog-wireframe.png)
+![](Home-Page-Wire-Frame.png)
+![](Resume-Wireframe.png)
+![](blog-wireframe.png)
 
 ###Style Guide
 
-![](emilyBollmanPortfolioSite/Style-Guide.png)
+![](Style-Guide.png)
 
 ###Resume Headshot
 
-![](emilyBollmanPortfolioSite/Resume-headshot.jpg)
+![](Resume-headshot.jpg)
 
 ###Link to Trello Board Tracking Project Progress
 
