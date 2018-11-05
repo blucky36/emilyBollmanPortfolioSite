@@ -95,3 +95,51 @@ img{
 #move{
   position: relative;
 }
+
+#vid1{
+  float: right;
+}
+
+#vid2{
+  float: left;
+}
+
+@media (max-width: 800px){
+  #vid1{
+    height: 100px;
+    width: 200px;
+  }
+
+  #vid2{
+    height: 100px;
+    width: 200px;
+  }
+}
+
+.carousel-inner .carousel-item img {
+  width:50%;
+  height:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image1{
+  transform: rotate(90deg);
+}
+
+.image2{
+  transform: rotate(90deg);
+  padding-top: 100px;
+}
+
+.image4{
+ transform: rotate(180deg);
+}
+
+.image9{
+  transform: rotate(90deg);
+}
+
+#content{
+  word-wrap: break-word;
+}

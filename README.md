@@ -4,17 +4,17 @@ Hello People!  Updated Readme!!!!!!!!
 
 ### Wire Frames
 
-![](Home-Page-Wire-Frame.png)
-![](Resume-Wireframe.png)
-![](blog-wireframe.png)
+![](Photos/Home-Page-Wire-Frame.png)
+![](Photos/Resume-Wireframe.png)
+![](Photos/blog-wireframe.png)
 
 ### Style Guide
 
-![](Style-Guide.png)
+![](Photos/Style-Guide.png)
 
 ### Resume Headshot
 
-![](Resume-headshot.jpg)
+![](Photos/Resume-headshot.jpg)
 
 ### Link to Trello Board Tracking Project Progress
 
