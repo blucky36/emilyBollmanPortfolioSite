@@ -1,11 +1,12 @@
 body{
-  background: url(https://images.unsplash.com/photo-1423768164017-3f27c066407f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a904178221ef3703248c4fd648d26cf0&auto=format&fit=crop&w=2100&q=80) no-repeat center center fixed;
+  background: url(Photos/roseMosaic.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   max-width: 100%;
   overflow-x: hidden;
+  font-family: "Goudy Old Style" !important;
 }
 
 div{
@@ -75,17 +76,22 @@ img{
 
 .blogPosts{
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .blogDates{
   text-align: right;
-  color: white;
+  color: black;
+  margin-bottom: 100px;
 }
 
 .white{
   color: white;
   font-weight: bold;
+}
+
+.black{
+  color: black;
 }
 
 .bg-primary{
@@ -142,4 +148,52 @@ img{
 
 #content{
   word-wrap: break-word;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='84' viewBox='0 0 126 84'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23050505' fill-opacity='0.09'%3E%3Cpath d='M126 83v1H0v-2h40V42H0v-2h40V0h2v40h40V0h2v40h40V0h2v83zm-2-1V42H84v40h40zM82 42H42v40h40V42zm-50-6a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm96 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-42 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm30-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM20 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 24a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24-42a4 4 0 1 1 0-8 4 4 0 0 1 0 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.leftToRight{
+  position: relative;
+  animation-name: slideRight;
+  animation-duration: 5s;
+}
+
+@keyframes slideRight {
+  0% {right: 1000px;}
+  100% {right: 0px;}
+}
+
+.rightToLeft{
+  position: relative;
+  animation-name: slideLeft;
+  animation-duration: 5s;
+}
+
+@keyframes slideLeft {
+  0% {left: 1000px;}
+  100% {left: 0px;}
+}
+
+.fadeIn {
+  position: relative;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#clean{
+  animation-name: fade;
+  animation-duration: 2s;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcomeBack{
+  height: 100%;
+  width: 200px;
 }
