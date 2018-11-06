@@ -1,60 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Emily and the Niclole Bollman</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css">
-    <script type="text/javascript">
-    </script>
-    <link rel="stylesheet" href="emilyBollman.css">
-    </head>
-    <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="emilyBollman.html">Emily</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="emilyResume.html">Resume <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="emilyCurrentWork.html">Current Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="emilyBlog.html">Blog/discussion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/Emmycutes">Facebook</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/EmilyNicBollman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/emilybollman/?hl=en">Instagram</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">LinkedIn</a>
-          </li>
-          <li>
-            <a class="nav-link" href="emilyPhotos.html">Photos</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<head>
+  <meta charset="utf-8">
+  <title>Emily and the Niclole Bollman</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="emilyBollman.css">
+  <script type="text/javascript" src="emilyBollman.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html"><img id="logo"src="Photos/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="emilyResume.html">Resume <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="emilyBlog.html">Blog/discussion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/EmilyNicBollman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/emilybollman/?hl=en">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.imdb.com/name/nm7427943/">IMBD</a>
+        </li>
+      </ul>
+      <div>
+        <h4 id="welcomeBack"></h4>
       </div>
-    </nav>
-    <h1>Blog</h1>
+      <form id="locstor3" class="form-inline my-2 my-lg-0">
+        <input id="email1" class="form-control mr-sm-2" type="email" placeholder="Email" value = "">
+        <button id="submitOne" class="btn btn-secondary my-2 my-sm-0" type="submit">Submit</button>
+      </form>
+    </div>
+  </nav>
+  <h1 class="fadeIn">Blog</h1>
+  <main id="content" class = "container fadeIn">
+  </main>
+  <footer class="page-footer font-small bg-primary row">
+    <article class="col-12">
+
+      <p>Contact Me:</p>
+
+      <p class="white">720-402-2283</p>
 
 
-  </body>
+      <p class="white">enbollma@syr.edu</p>
+
+
+      <p class="white">emilynbollman@gmail.com</p>
+
+    </article>
+  </footer>
+  <script>
+    let append = document.getElementById("content")
+    axios.get(`https://www.googleapis.com/blogger/v3/blogs/5507380449016034092/posts?key=AIzaSyCpZyVwh6fE5I5Dsp0HqaTKemPKtZz7W80`).then(
+      function handleResponse(response) {
+        for (let i = 0; i < response.data.items.length; i++) {
+          let row = document.createElement("main")
+          row.setAttribute("class","row")
+          append.appendChild(row)
+          let column1 = document.createElement("main")
+          column1.setAttribute("class","col-3")
+          let column2 = document.createElement("main")
+          column2.setAttribute("class","col-6")
+          let column3 = document.createElement("main")
+          column3.setAttribute("class","col-3")
+          row.appendChild(column1)
+          row.appendChild(column2)
+          row.appendChild(column3)
+          let postP = document.createElement("p")
+          postP.setAttribute("class", "blogPosts")
+          postP.innerHTML = response.data.items[i].content
+          let dateP = document.createElement("p")
+          dateP.setAttribute("class", "blogDates")
+          dateP.innerHTML = response.data.items[i].published
+          column2.appendChild(postP)
+          column2.appendChild(dateP)
+        }
+      })
+  </script>
+</body>
 </html>
