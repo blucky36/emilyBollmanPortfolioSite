@@ -14,7 +14,7 @@ Hello People!  Updated Readme!!!!!!!!
 
 ### Resume Headshot
 
-![](Photos/photo12)
+![](Photos/photo12.jpg)
 
 ### Link to Trello Board Tracking Project Progress
 
