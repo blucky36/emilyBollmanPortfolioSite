@@ -7,10 +7,7 @@ body{
   max-width: 100%;
   overflow-x: hidden;
   font-family: "Goudy Old Style" !important;
-}
-
-div{
-
+  font-size: 1.5vw !important;
 }
 
 h1{
@@ -30,14 +27,6 @@ h1{
 
 h2{
   text-align center;
-
-}
-
-p {
-
-}
-
-button{
 
 }
 
@@ -110,6 +99,14 @@ img{
   float: left;
 }
 
+#vid3{
+  float: right;
+}
+
+#vid4{
+  float: left;
+}
+
 @media (max-width: 800px){
   #vid1{
     height: 100px;
@@ -117,6 +114,16 @@ img{
   }
 
   #vid2{
+    height: 100px;
+    width: 200px;
+  }
+
+  #vid3{
+    height: 100px;
+    width: 200px;
+  }
+
+  #vid4{
     height: 100px;
     width: 200px;
   }
@@ -196,4 +203,12 @@ img{
 #welcomeBack{
   height: 100%;
   width: 200px;
+}
+
+tr{
+  line-height: 25%;
+}
+
+#logo{
+  height: 75px;
 }

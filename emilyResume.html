@@ -16,7 +16,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.html">Emily</a>
+    <a class="navbar-brand" href="index.html"><img id="logo"src="Photos/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,9 +25,6 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="emilyResume.html">Resume <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="emilyCurrentWork.html">Current Work</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="emilyBlog.html">Blog/discussion</a>
@@ -42,8 +39,8 @@
           <a class="nav-link" href="https://www.imdb.com/name/nm7427943/">IMBD</a>
         </li>
       </ul>
-      <div id="welcomeBack">
-
+      <div>
+        <h4 id="welcomeBack"></h4>
       </div>
       <form id = "locstor2"class="form-inline my-2 my-lg-0">
         <input id="email1" class="form-control mr-sm-2" type="email" placeholder="Email" value = "">
@@ -173,14 +170,19 @@
           </thread>
           <tbody>
             <tr>
-              <td class="white">Fireside (feature length)</td>
-              <td class="white">Lead Role</td>
-              <td class="white">Dir. Evan Groover</td>
+              <td id = "firesideEL" class="white">Fireside (feature length)</td>
+              <td id = "firesideRoleEL" class="white">Lead Role</td>
+              <td id = "firesideDirEL" class="white">Dir. Evan Groover</td>
             </tr>
             <tr>
-              <td class="white">Hunted Pride</td>
-              <td class="white">Lead Role</td>
-              <td class="white">Dir. Addie Kopsidas & Abigail Louise Jones</td>
+              <td id = "hpEL" class="white">Hunted Pride</td>
+              <td id = "hpRoleEL" class="white">Lead Role</td>
+              <td id = "hpDirEL" class="white">Dir. Addie Kopsidas & Abigail Louise Jones</td>
+            </tr>
+            <tr>
+              <td id = "strideEL" class="white">Stride</td>
+              <td id = "strideRoleEL" class="white">Supporting Role</td>
+              <td id = "strideDirEL" class="white">Dir. Weston Taylor</td>
             </tr>
           </tbody>
         </table>
@@ -189,7 +191,7 @@
       </article>
     </main>
     <main class="row">
-      <article class="col-12 text-center fadeIn">
+      <article id="movieAppend" class="col-12 text-center fadeIn">
         <h3 class="white">Education</h3>
       </article>
     </main>

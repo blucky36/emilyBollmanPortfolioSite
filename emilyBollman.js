@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let emailInput = document.getElementById("email1")
   let submit = document.getElementById("submitOne")
   let welcome = document.getElementById("welcomeBack")
+  let fireside = document.getElementById("firesideEL")
+  let firesideRole = document.getElementById("firesideRoleEL")
+  let firesideDir = document.getElementById("firesideDirEL")
+  let hp = document.getElementById("hpEL")
+  let hpRole = document.getElementById("hpRoleEL")
+  let hpDir = document.getElementById("hpDirEL")
+  let stride = document.getElementById("strideEL")
+  let strideRole = document.getElementById("strideRoleEL")
+  let strideDir = document.getElementById("strideDirEL")
+  let movie = document.getElementById("movieAppend")
 
   let emailNow = localStorage.getItem("email")
 
@@ -39,9 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault()
     localStorage.setItem("email", emailInput.value)
     if(emailNow === emailInput.value){
-      let message = document.createElement("h4")
-      message.innerHTML = "Welcome Back!"
-      welcome.appendChild(message)
+      welcome.innerHTML = "Welcome Back!"
     }
   })
 
@@ -61,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "Photos/photo12.jpg")
+    photo.setAttribute("src", "")
     correctAppend.appendChild(photo)
 
   })
@@ -183,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "Photos/photo12.jpg")
+    photo.setAttribute("src", "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/30411845_2071868996159770_3975288314608484352_o.jpg?_nc_cat=109&_nc_ht=scontent-dfw5-2.xx&oh=98bad36b7340a08010182408ca77835e&oe=5C7A98AD")
     correctAppend.appendChild(photo)
 
   })
@@ -194,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "Photos/photo12.jpg")
+    photo.setAttribute("src", "Photos/something.jpg")
     correctAppend.appendChild(photo)
 
   })
@@ -205,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "Photos/photo12.jpg")
+    photo.setAttribute("src", "Photos/heathers.jpg")
     correctAppend.appendChild(photo)
 
   })
@@ -216,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "Photos/photo13.png")
+    photo.setAttribute("src", "Photos/photo7.jpg")
     correctAppend.appendChild(photo)
 
   })
@@ -227,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "Photos/photo12.jpg")
+    photo.setAttribute("src", "")
     correctAppend.appendChild(photo)
 
   })
@@ -271,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "Photos/photo12.jpg")
+    photo.setAttribute("src", "")
     correctAppend.appendChild(photo)
 
   })
@@ -282,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "https://bridge.cupresents.org/images/venues/cupresents/244237-image.jpeg")
+    photo.setAttribute("src", "https://i.snag.gy/IYehyK.jpg")
     correctAppend.appendChild(photo)
 
   })
@@ -315,14 +323,112 @@ document.addEventListener("DOMContentLoaded", () => {
     photo = document.createElement("img")
 
     photo.setAttribute("id", "clean")
-    photo.setAttribute("src", "https://bridge.cupresents.org/images/venues/cupresents/244237-image.jpeg")
+    photo.setAttribute("src", "https://i.snag.gy/IYehyK.jpg")
     correctAppend.appendChild(photo)
 
   })
   loft2Theater.addEventListener("mouseout", (e) => {
     correctAppend.removeChild(photo)
   })
+  fireside.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
 
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "Photos/photo8.jpg")
+    movie.appendChild(photo)
+
+  })
+  fireside.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  firesideRole.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://i.snag.gy/yN1gjc.jpg")
+    movie.appendChild(photo)
+
+  })
+  firesideRole.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  firesideDir.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://static1.squarespace.com/static/571d3731f8baf3a83d8c0cc3/t/58e57354bf629a0d7cf6b5c6/favicon.ico")
+    movie.appendChild(photo)
+
+  })
+  firesideDir.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  hp.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.15752-9/s2048x2048/45494884_354443221794401_5734520469671903232_n.jpg?_nc_cat=102&_nc_ht=scontent-dfw5-2.xx&oh=3d2e2a62eac4edb59fa78bb5b7704019&oe=5C80CCA8")
+    movie.appendChild(photo)
+
+  })
+  hp.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  hpRole.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://i.snag.gy/KPF7m1.jpg")
+    movie.appendChild(photo)
+
+  })
+  hpRole.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  hpDir.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://media.licdn.com/dms/image/C5616AQF6dY1RKrBUCg/profile-displaybackgroundimage-shrink_350_1400/0?e=1547078400&v=beta&t=Z5yLe2FR3YFWvwy0JYmSl_F0WG2RN9_NQsUHvRb8Vc4")
+    movie.appendChild(photo)
+
+  })
+  hpDir.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  stride.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/40769125_2404966412861821_1158673780076183552_o.jpg?_nc_cat=107&_nc_ht=scontent-dfw5-2.xx&oh=83002516b30692002d523b181ee3502f&oe=5C41507B")
+    movie.appendChild(photo)
+
+  })
+  stride.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  strideRole.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://m.media-amazon.com/images/M/MV5BMTBiNjE5YjUtMWE3MC00MzE2LWI3NDQtZTgyZmEzOWU0ZTlmXkEyXkFqcGdeQXVyNDM4ODI4ODE@._V1_SY1000_SX1600_AL_.jpg")
+    movie.appendChild(photo)
+
+  })
+  strideRole.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
+  strideDir.addEventListener("mouseover", (e) => {
+    photo = document.createElement("img")
+
+    photo.setAttribute("id", "clean")
+    photo.setAttribute("src", "https://scontent-dfw5-2.xx.fbcdn.net/v/t31.0-8/23270538_1913654511993016_1912769585742582836_o.jpg?_nc_cat=110&_nc_ht=scontent-dfw5-2.xx&oh=02811e9f40153e9eb0c935469a301e8e&oe=5C6F71AA")
+    movie.appendChild(photo)
+
+  })
+  strideDir.addEventListener("mouseout", (e) => {
+    movie.removeChild(photo)
+  })
 
 })
 
