@@ -67,6 +67,7 @@
 
     </article>
   </footer>
+  <script src="node_modules/moment/moment.js"></script>
   <script>
     let append = document.getElementById("content")
     axios.get(`https://www.googleapis.com/blogger/v3/blogs/5507380449016034092/posts?key=AIzaSyCpZyVwh6fE5I5Dsp0HqaTKemPKtZz7W80`).then(
@@ -91,6 +92,7 @@
           dateP.setAttribute("class", "blogDates")
           dateP.innerHTML = response.data.items[i].published
           column2.appendChild(postP)
+          dateP.innerHTML = moment(dateP.innerHTML).format('MMMM DD YYYY, h:mm:ss a')
           column2.appendChild(dateP)
         }
       })
