@@ -1,0 +1,24 @@
+{
+  "name": "emilyProject",
+  "version": "1.0.0",
+  "description": "Hello People!  Updated Readme!!!!!!!!",
+  "main": "emilyBollman.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blucky36/emilyBollmanPortfolioSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blucky36/emilyBollmanPortfolioSite/issues"
+  },
+  "homepage": "https://github.com/blucky36/emilyBollmanPortfolioSite#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "moment": "^2.22.2"
+  }
+}
